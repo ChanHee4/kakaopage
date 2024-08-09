@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오페이지</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/css.css">
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="lib/jquery-ui.min.js"></script>
+    <script>
+        $(function () {
+            let bestMenu = $('.section02 .title ul li')
+            let bestList = $('.section02_slider')
+            bestMenu.click(function () {
+                //alert('')
+                bestMenu.removeClass('on')
+                $(this).addClass('on')
+
+                var index = $(this).index()
+                bestList.eq(index).addClass('on').siblings().removeClass('on')
+
+                bestList.css("z-index", "1")
+                bestList.eq(index).css("z-index", "9")
+            })
+
+            let damuMenu = $('.section04 .title ul li')
+            let damuList = $('.section04 .wrap')
+            damuMenu.click(function () {
+                //alert('')
+                damuMenu.removeClass('on')
+                $(this).addClass('on')
+
+                var index = $(this).index()
+                damuList.eq(index).addClass('on').siblings().removeClass('on')
+
+                damuList.css("z-index", "1")
+                damuList.eq(index).css("z-index", "9")
+            })
+
+
+            let dailyMenu = $('.section06 .title ul li')
+            let dailyList = $('.section06 .wrap')
+            dailyMenu.click(function () {
+                //alert('')
+                dailyMenu.removeClass('on')
+                $(this).addClass('on')
+
+                var index = $(this).index()
+                dailyList.eq(index).addClass('on').siblings().removeClass('on')
+
+                dailyList.css("z-index", "1")
+                dailyList.eq(index).css("z-index", "9")
+            })
+        })
+
+
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrap">
+            <div class="logo">
+                <a href="#"><img src="img/2.png" alt="" class="logo_image"></a>
+                <a href="#"><img src="img/logo.svg" alt="" class="kakao"></a>
+            </div><!-- logo end -->
+            <nav class="nav">
+                <ul class="gnb">
+                    <li><a href="#">웹툰</a></li>
+                    <li><a href="#">웹소설</a></li>
+                    <li><a href="#">영화</a></li>
+                    <li><a href="#">방송</a></li>
+                    <li><a href="#">책</a></li>
+                    <li><a href="#">MY</a></li>
+                </ul><!-- .gnb end -->
+            </nav><!-- .nav end -->
+            <div class="search">
+                <input type="text" placeholder="제목, 작가를 입력하세요.">
+                <a href="#"><img src="img/icon5.svg" alt=""></a>
+            </div><!-- search end -->
+            <div class="icon">
+                <a href="#"><img src="img/icon1.svg" alt=""></a>
+                <a href="#"><img src="img/icon2.svg" alt=""></a>
+                <a href="#"><img src="img/icon3.svg" alt=""></a>
+                <a href="#"><img src="img/icon4.svg" alt=""></a>
+            </div>
+        </div>
+    </header><!-- .header end -->
+
+    <section class="section01">
+        <div class="swiper mySwiper01 pc">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/banner_pc.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/banner_pc.jpg" alt="">
+                </div>
+
+            </div>
+        </div><!-- .pc end -->
+
+        <div class="swiper mySwiper01 tablet">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/banner_tablet.jfif" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/banner_tablet.jfif" alt="">
+                </div>
+
+            </div>
+        </div><!-- .table end -->
+        
+        <div class="swiper mySwiper01 mobile">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/banner_mobile.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/banner_mobile.jpg" alt="">
+                </div>
+
+            </div>
+        </div><!-- .table end -->
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        </div><!-- swiper end -->
+
+        <div class="title">
+            <span>Event</span>
+            <h3>나 혼자만 레벨 업</h3>
+            <p>응원 댓글 남기고 선물 받자 !</p>
+        </div>
+    </section><!-- .section01 end -->
+
+
+    <section class="section02">
+        <div class="title">
+            <h3>Best</h3>
+            <p>실시간 인기</p>
+            <ul>
+                <li class="on">웹툰</li>
+                <li>웹소설</li>
+                <li>영화</li>
+                <li>방송</li>
+                <li>책</li>
+            </ul>
+        </div><!-- .title end -->
+        <div class="wrap">
+            <div class="section02_slider on">
+                <div class="swiper mySwiper02">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/best01.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best09.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best02.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best04.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best03.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best08.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best06.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best07.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best10.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best11.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best12.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best13.jfif" alt=""></div>
+                    </div>
+                    <div class="btn">
+                        <div class="swiper-button-next02"></div>
+                        <div class="swiper-button-prev02"></div>
+                    </div><!-- btn end -->
+                </div>
+            </div><!-- .section02_slider end -->
+            <div class="section02_slider">
+                <div class="swiper mySwiper02">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/best10.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best07.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best13.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best12.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best01.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best09.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best02.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best04.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best03.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best08.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best06.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best11.jfif" alt=""></div>
+                    </div>
+                    <div class="btn">
+                        <div class="swiper-button-next02"></div>
+                        <div class="swiper-button-prev02"></div>
+                    </div><!-- btn end -->
+                </div>
+            </div><!-- .section02_slider end -->
+            <div class="section02_slider">
+                <div class="swiper mySwiper02">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/best13.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best12.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best11.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best01.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best10.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best09.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best02.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best04.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best03.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best08.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best06.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best07.jfif" alt=""></div>
+                    </div>
+                    <div class="btn">
+                        <div class="swiper-button-next02"></div>
+                        <div class="swiper-button-prev02"></div>
+                    </div><!-- btn end -->
+                </div>
+            </div><!-- .section02_slider end -->
+            <div class="section02_slider">
+                <div class="swiper mySwiper02">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/best07.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best06.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best08.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best03.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best01.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best09.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best02.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best04.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best10.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best11.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best12.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best13.jfif" alt=""></div>
+                    </div>
+                    <div class="btn">
+                        <div class="swiper-button-next02"></div>
+                        <div class="swiper-button-prev02"></div>
+                    </div><!-- btn end -->
+                </div>
+            </div><!-- .section02_slider end -->
+            <div class="section02_slider">
+                <div class="swiper mySwiper02">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/best03.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best06.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best10.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best02.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best04.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best08.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best01.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best09.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best07.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best11.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best12.jfif" alt=""></div>
+                        <div class="swiper-slide"><img src="img/best13.jfif" alt=""></div>
+                    </div>
+                    <div class="btn">
+                        <div class="swiper-button-next02"></div>
+                        <div class="swiper-button-prev02"></div>
+                    </div><!-- btn end -->
+                </div>
+            </div><!-- .section02_slider end -->
+        </div>
+    </section><!-- .section01 end -->
+
+
+    <section class="section03">
+        <a href="#"><img src="img/광고1.jpg" alt=""></a>
+    </section>
+
+
+
+    <section class="section04">
+        <div class="title">
+            <h3>3다무</h3>
+            <p>3시간마다 무료</p>
+            <ul>
+                <li class="on">웹툰</li>
+                <li>웹소설</li>
+                <li>영화</li>
+            </ul>
+        </div><!-- .title end -->
+
+        <div class="list">
+            <div class="wrap on">
+                <figure>
+                    <img src="img/webtoon01.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon02.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon03.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon04.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon05.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon06.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon07.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon08.jpg" alt="">
+                </figure>
+            </div><!-- .wrap end -->
+            <div class="wrap">
+                <figure>
+                    <img src="img/webtoon09.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon10.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon11.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon12.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon13.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon01.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon02.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon03.jpg" alt="">
+                </figure>
+            </div><!-- .wrap end -->
+            <div class="wrap">
+                <figure>
+                    <img src="img/webtoon04.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon05.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon06.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon07.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon08.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon09.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon10.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon11.jpg" alt="">
+                </figure>
+            </div><!-- .wrap end -->
+            <div class="more">
+                <p>더보기<img src="img/icon-plus.svg" alt=""></p>
+            </div>
+        </div><!-- .list end -->
+    </section><!-- .section04 end -->
+
+
+    <section class="section05">
+        <div class="title">
+            <h3>오늘 신작</h3>
+            <div class="more">
+                <p>더보기<img src="img/icon-plus.svg" alt=""></p>
+            </div>
+        </div><!-- .title end -->
+
+        <div class="swiper mySwiper03">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/new03.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/new02.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/new01.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section><!-- .section05 end -->
+
+
+    <section class="section06">
+        <div class="title">
+            <h3>요일 연재</h3>
+            <ul>
+                <li class="on">월요일</li>
+                <li>화요일</li>
+                <li>수요일</li>
+                <li>목요일</li>
+                <li>금요일</li>
+                <li>토요일</li>
+                <li>일요일</li>
+            </ul>
+        </div><!-- .title end -->
+
+        <div class="list">
+            <div class="wrap on">
+                <figure>
+                    <img src="img/webtoon02.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon03.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon04.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon05.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon06.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon07.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon08.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon09.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon10.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon11.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon12.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon13.jpg" alt="">
+                </figure>
+            </div><!-- .wrap end -->
+            <div class="wrap">
+                <figure>
+                    <img src="img/webtoon01.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon02.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon03.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon04.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon05.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon06.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon07.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon08.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon09.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon10.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon11.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon12.jpg" alt="">
+                </figure>
+            </div><!-- .wrap end -->
+            <div class="wrap">
+                <figure>
+                    <img src="img/webtoon03.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon04.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon05.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon06.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon07.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon08.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon09.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon10.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon11.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon12.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon13.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon01.jpg" alt="">
+                </figure>
+            </div><!-- .wrap end -->
+            <div class="wrap">
+                <figure>
+                    <img src="img/webtoon04.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon05.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon06.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon07.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon08.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon09.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon10.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon11.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon12.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon13.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon01.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon02.jpg" alt="">
+                </figure>
+            </div><!-- .wrap end -->
+            <div class="wrap">
+                <figure>
+                    <img src="img/webtoon05.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon06.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon07.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon08.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon09.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon10.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon11.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon12.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon13.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon01.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon02.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon03.jpg" alt="">
+                </figure>
+            </div><!-- .wrap end -->
+            <div class="wrap">
+                <figure>
+                    <img src="img/webtoon06.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon07.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon08.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon09.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon10.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon11.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon12.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon13.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon01.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon02.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon03.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon04.jpg" alt="">
+                </figure>
+            </div><!-- .wrap end -->
+            <div class="wrap">
+                <figure>
+                    <img src="img/webtoon07.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon08.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon09.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon10.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon11.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon12.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon13.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon01.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon02.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon03.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon04.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/webtoon05.jpg" alt="">
+                </figure>
+            </div><!-- .wrap end -->
+            <div class="more">
+                <p>더보기<img src="img/icon-plus.svg" alt=""></p>
+            </div>
+        </div><!-- .list end -->
+    </section>
+
+
+
+
+    <section class="section07">
+        <figure>
+            <img class="main pc" src="img/광고2.png" alt="">
+            <img class="main tablet" src="img/광고2-1.png" alt="">
+            <img src="img/GooglePlay.svg" alt="" class="sub01">
+            <img src="img/AppStore.svg" alt="" class="sub02">
+        </figure>
+    </section><!-- .section07 end -->
+
+
+
+
+
+    <footer class="footer">
+        <div class="btn">
+            <figure>
+                <img src="img/footer01.jpg" alt="">
+            </figure>
+            <figure>
+                <img src="img/footer02.jpg" alt="">
+            </figure>
+        </div><!-- .btn end -->
+
+        <span>Kakao Page</span>
+
+        <div class="copyright">
+            <div class="btn02">
+                <a href="#">회사소개</a>
+                <a href="#">이용약관</a>
+                <a href="#"><strong>개인정보처리방침</strong></a>
+                <a href="#">청소년보호정책</a>
+                <a href="#">공지사항</a>
+            </div><!-- .btn02 end -->
+
+            <div class="text">
+                <div class="first">
+                    <p>(주)카카오엔터테인먼트 사업자 정보</p>
+                    <p>공동대표이사 권기수, 장윤중</p>
+                    <p>호스팅서비스사업자 (주)카카오엔터테인먼트</p>
+                </div><!-- .first end -->
+                <div class="second">
+                    <p>사업자 등록 번호 220-88-02594</p>
+                    <p>통신판매업신고 2018-성남분당B-0004</p>
+                </div><!-- .second end -->
+                <div class="third">
+                    <p>대표전화 1644-4755</p>
+                    <p>이메일 contact@kakaopage.com</p>
+                    <p>경기도 성남시 분당구 판교역로 221</p>
+                </div><!-- .third -->
+                <div class="fourth">
+                    <p>ⓒ Kakao Entertainment Corp.</p>
+                </div><!-- .fourth -->
+            </div><!-- .text end -->
+        </div><!-- .copyright end -->
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper01", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        var swiper2 = new Swiper(".mySwiper02", {
+            slidesPerView: 2.2,
+            spaceBetween: 15,
+            observer: true,
+            navigation: {
+                nextEl: ".swiper-button-next02",
+                prevEl: ".swiper-button-prev02",
+            },
+
+            breakpoints: {
+                961: {
+                    slidesPerView: 3.8,
+                    spaceBetween: 20,
+                },
+                601: {
+                    slidesPerView: 2.8,
+                    spaceBetween: 20,
+                }
+            }
+        });
+
+        var swiper = new Swiper(".mySwiper03", {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+
+            breakpoints: {
+                961: {
+                    slidesPerView: 2.8,
+                    spaceBetween: 20,
+                },
+                601: {
+                    slidesPerView: 1.7,
+                    spaceBetween: 15,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
