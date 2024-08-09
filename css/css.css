@@ -371,7 +371,7 @@ body {
     cursor: pointer;
 }
 .section04 .wrap figure:hover img {
-    scale: 1.05;
+    transform: scale(1.05);
 }
 .section04 .wrap figure img {
     width: 100%;
@@ -533,7 +533,7 @@ body {
     cursor: pointer;
 }
 .section06 .wrap figure:hover img {
-    scale: 1.05;
+    transform: scale(1.05);
 }
 .section06 .wrap figure img {
     width: 100%;
@@ -700,7 +700,7 @@ body {
     .section02 .title p {font-size: 18px; margin-bottom: 20px;}
     .section02 .title ul {row-gap: 15px;}
     .section02 .title ul li {width: 40%; height: 40px; line-height: 40px;}
-    .section02 .btn {bottom: 15%; left: -30;}
+    .section02 .btn {bottom: 15%; left: -33%;}
     .section02 .btn .swiper-button-next02, .section02 .btn .swiper-button-prev02 {width: 35px;}
 
     .section03 a img {width: 100%;}
